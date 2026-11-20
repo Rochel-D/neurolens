@@ -1,0 +1,22 @@
+# NeuroLens v2 — core app (Python 3.11+, tested on 3.13; works on 3.14). Minimum versions.
+fastapi>=0.115
+uvicorn>=0.30
+SQLAlchemy>=2.0
+pydantic>=2.7
+pydantic-settings>=2.3
+python-multipart>=0.0.9
+bcrypt>=4.1
+PyJWT>=2.8
+httpx>=0.27
+pypdf>=4.0
+pillow>=10.0
+numpy>=1.26
+scikit-learn>=1.4
+langgraph>=0.2
+mcp>=1.2
+mcp-server-fetch
+# v2: PDF export (with Hindi text shaping) and optional local OCR
+fpdf2>=2.8
+uharfbuzz>=0.40
+pytesseract>=0.3.10
+pytest>=8.0

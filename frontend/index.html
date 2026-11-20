@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeuroLens — medical report assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/app.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='14' r='10' fill='none' stroke='%230d7c7a' stroke-width='3'/%3E%3Cpath d='M21 21l7 7' stroke='%230d7c7a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<section id="auth" class="auth hidden">
+  <div class="auth-hero">
+    <div class="brand"><span class="lens"></span>NeuroLens</div>
+    <h1>Understand your reports.<br><em>In plain words.</em></h1>
+    <p>Upload a blood report, a photo of one, or a brain MRI slice. NeuroLens reads it, checks every value, and explains it simply for you and technically for your doctor.</p>
+    <div class="feat">
+      <div><b>Any blood report</b>PDF, text or a phone photo</div>
+      <div><b>Brain MRI</b>Pattern classifier with a heatmap</div>
+      <div><b>English · हिन्दी · Konkani</b>Explanations in your language</div>
+      <div><b>PDF summary</b>To print or take to your doctor</div>
+    </div>
+  </div>
+  <div class="auth-side">
+    <form class="auth-card" id="authForm" autocomplete="on">
+      <div class="seg" id="authTabs"><button type="button" data-tab="login" class="on">Sign in</button><button type="button" data-tab="register">Create account</button></div>
+      <label class="field reg-only hidden">Full name<input name="name" minlength="2" maxlength="80"></label>
+      <label class="field">Email<input name="email" type="email" required autocomplete="email"></label>
+      <label class="field">Password<input name="password" type="password" required minlength="8" autocomplete="current-password">
+        <small class="reg-only hidden muted">8+ characters with letters and digits</small></label>
+      <button class="btn primary" type="submit" id="authSubmit" style="justify-content:center;padding:.7rem">Sign in</button>
+      <p class="err" id="authErr"></p>
+      <p class="tiny muted" style="text-align:center;margin:0">Health education only — not a diagnosis.</p>
+    </form>
+  </div>
+</section>
+
+<div id="app" class="app hidden">
+  <aside class="side">
+    <div class="brand"><span class="lens"></span>NeuroLens</div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-sec"><span>Chats</span><button class="btn ghost sm" id="newChat" title="New chat">+ New</button></div>
+    <div class="threads" id="threadList"></div>
+    <div class="me"><div class="avatar" id="meAvatar"></div><div class="grow"><b id="meName" class="small"></b><small id="meEmail"></small></div>
+      <button class="icon-btn" id="logout" title="Sign out"></button></div>
+  </aside>
+  <main>
+    <header class="top">
+      <div class="grow"><h2 id="viewTitle">Home</h2></div>
+      <div class="ctl">
+        <label for="langSel">Language</label>
+        <select class="input" id="langSel" style="width:auto;padding:.35rem .5rem"></select>
+        <div class="seg" id="audience" title="Who the explanation is for"><button data-aud="patient" class="on">Me (simple)</button><button data-aud="doctor">My doctor</button></div>
+        <button class="icon-btn" id="themeBtn" title="Light / dark"></button>
+      </div>
+    </header>
+    <section class="view" id="view-home"></section>
+    <section class="view hidden" id="view-chat"></section>
+    <section class="view hidden" id="view-reports"></section>
+    <section class="view hidden" id="view-mri"></section>
+    <section class="view hidden" id="view-memory"></section>
+    <section class="view hidden" id="view-admin"></section>
+    <div class="footer-note">NeuroLens gives general health education, not a diagnosis. In an emergency call 112.</div>
+  </main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

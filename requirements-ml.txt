@@ -1,0 +1,8 @@
+# Optional: needed only to run the trained MRI classifier and the local fine-tuned explainer.
+# CPU-only PyTorch (smaller download):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.4
+torchvision>=0.19
+transformers>=4.46
+peft>=0.13
+accelerate>=1.0

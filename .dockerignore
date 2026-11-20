@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+*.db
+__pycache__/
+.pytest_cache/
+.git/
+docs/
+evals/
+tests/
+training/
+mri_out/
+work/
+models/*/
+deploy/
+*.zip

@@ -1,0 +1,17 @@
+MARGAO MEDICAL LAB (SAMPLE — FICTIONAL PATIENT)
+Patient: Test Patient C, 67 years, Female
+
+THYROID PROFILE
+Total T3                     72         ng/dL        80 - 200
+Total T4                     4.1        µg/dL        5.0 - 12.0
+TSH (Ultrasensitive)         11.8       µIU/mL       0.4 - 4.5
+
+ELECTROLYTES
+Serum Sodium                 128        mmol/L       135 - 145
+Serum Potassium              6.8        mmol/L       3.5 - 5.1
+Serum Chloride               99         mmol/L       98 - 107
+Serum Calcium                8.9        mg/dL        8.6 - 10.3
+
+VITAMINS
+Vitamin D (25-OH)            14.2       ng/mL        30 - 100
+eGFR                         52         mL/min/1.73m2

@@ -1,0 +1,14 @@
+# Colab (T4) training requirements
+torch
+torchvision
+transformers
+peft
+trl
+bitsandbytes
+accelerate
+datasets
+pandas
+scikit-learn
+tensorboard
+textstat
+kaggle

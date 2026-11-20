@@ -1,0 +1,26 @@
+PANAJI PATH LABS (SAMPLE — FICTIONAL PATIENT)
+Name: Test Patient B   Age: 52 Y   Sex: Male   Collected: 27/10/2026
+
+DIABETES PANEL
+Fasting Blood Sugar          118        mg/dL       70 - 99
+Post Prandial Blood Sugar    186        mg/dL       70 - 139
+HbA1c                        6.2        %           4.0 - 5.6
+
+LIPID PROFILE
+Total Cholesterol            232        mg/dL       < 200
+Triglycerides                210        mg/dL       < 150
+HDL Cholesterol              36         mg/dL       > 40
+LDL Cholesterol              154        mg/dL       < 100
+VLDL                         42         mg/dL       5 - 40
+Total Cholesterol/HDL Ratio  6.4
+
+KIDNEY FUNCTION
+Blood Urea                   32         mg/dL       15 - 45
+Serum Creatinine             1.1        mg/dL       0.7 - 1.3
+Serum Uric Acid              8.1        mg/dL       3.5 - 7.2
+
+LIVER FUNCTION
+SGPT (ALT)                   78         U/L         7 - 56
+SGOT (AST)                   45         U/L         10 - 40
+Total Bilirubin              0.8        mg/dL       0.1 - 1.2
+Serum Albumin                4.3        g/dL        3.5 - 5.0

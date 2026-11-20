@@ -1,0 +1,24 @@
+GOA DIAGNOSTIC LABORATORY (SAMPLE — FICTIONAL PATIENT)
+Patient: Test Patient A     Age/Sex: 34 / Female     Date: 28-10-2026
+Referred by: Self
+
+COMPLETE BLOOD COUNT (CBC)
+Test                         Result     Unit          Reference Range
+Haemoglobin (Hb)             10.4       g/dL          12.0 - 15.5
+Total RBC Count              3.9        million/µL    4.0 - 5.2
+Packed Cell Volume (PCV)     32.1       %             36 - 46
+MCV                          74         fL            80 - 100
+MCH                          24.5       pg            27 - 33
+MCHC                         31.2       g/dL          32 - 36
+Total Leucocyte Count        7800       cells/cumm    4000 - 11000
+Neutrophils                  62         %             40 - 75
+Lymphocytes                  30         %             20 - 45
+Platelet Count               2.6        lakh/cumm     1.5 - 4.5
+ESR                          28         mm/hr         0 - 20
+
+IRON STUDIES
+Serum Iron                   42         µg/dL         60 - 170
+Serum Ferritin               8          ng/mL         15 - 150
+Vitamin B12                  310        pg/mL         200 - 900
+
+-- End of report --

@@ -1,0 +1,981 @@
+[
+ {
+  "id": "hemoglobin",
+  "name": "Haemoglobin",
+  "aliases": [
+   "hemoglobin",
+   "haemoglobin",
+   "hb",
+   "hgb"
+  ],
+  "unit": "g/dL",
+  "low": 12.0,
+  "high": 17.5,
+  "sex": {
+   "male": [
+    13.5,
+    17.5
+   ],
+   "female": [
+    12.0,
+    15.5
+   ]
+  },
+  "critical_low": 7.0,
+  "critical_high": 20.0,
+  "category": "Blood count (CBC)",
+  "conversions": {
+   "g/l": 0.1
+  },
+  "what": "Haemoglobin is the protein inside red blood cells that carries oxygen from your lungs to the rest of your body.",
+  "low_means": "A low level is called anaemia. It can come from low iron, low vitamin B12 or folate, blood loss, or long-term illness, and can make you feel tired or breathless.",
+  "high_means": "A high level can happen with dehydration, smoking, living at high altitude, or conditions that make the body produce extra red cells."
+ },
+ {
+  "id": "rbc",
+  "name": "Red blood cell count",
+  "aliases": [
+   "rbc count",
+   "red blood cell count",
+   "red blood cells",
+   "rbc",
+   "erythrocytes",
+   "total rbc"
+  ],
+  "unit": "million/µL",
+  "low": 4.0,
+  "high": 5.9,
+  "sex": {
+   "male": [
+    4.5,
+    5.9
+   ],
+   "female": [
+    4.0,
+    5.2
+   ]
+  },
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Blood count (CBC)",
+  "conversions": {},
+  "what": "This counts how many red blood cells are in a small amount of blood. Red cells carry oxygen.",
+  "low_means": "A low count often goes together with anaemia.",
+  "high_means": "A high count can be caused by dehydration, smoking or conditions that raise red cell production."
+ },
+ {
+  "id": "wbc",
+  "name": "White blood cell count",
+  "aliases": [
+   "total leucocyte count",
+   "total leukocyte count",
+   "white blood cell count",
+   "white blood cells",
+   "wbc count",
+   "wbc",
+   "tlc"
+  ],
+  "unit": "×10³/µL",
+  "low": 4.0,
+  "high": 11.0,
+  "critical_low": 2.0,
+  "critical_high": 30.0,
+  "category": "Blood count (CBC)",
+  "conversions": {
+   "cells/cumm": 0.001,
+   "/cumm": 0.001,
+   "cells/µl": 0.001,
+   "/µl": 0.001
+  },
+  "what": "White blood cells are part of the immune system and help the body fight infections.",
+  "low_means": "A low count can follow some viral infections, certain medicines, or problems with the bone marrow, and can make infections more likely.",
+  "high_means": "A high count is most often a sign the body is fighting an infection or inflammation; stress and some medicines can also raise it."
+ },
+ {
+  "id": "platelets",
+  "name": "Platelet count",
+  "aliases": [
+   "platelet count",
+   "platelets",
+   "plt",
+   "thrombocytes"
+  ],
+  "unit": "×10³/µL",
+  "low": 150,
+  "high": 450,
+  "critical_low": 50,
+  "critical_high": 1000,
+  "category": "Blood count (CBC)",
+  "conversions": {
+   "lakh/cumm": 100,
+   "lakhs/cumm": 100,
+   "/cumm": 0.001,
+   "cells/cumm": 0.001
+  },
+  "what": "Platelets are tiny cells that help blood clot and stop bleeding.",
+  "low_means": "A low count can cause easy bruising or bleeding. In India it is commonly seen with dengue and other viral fevers.",
+  "high_means": "A high count can happen after infection, inflammation, iron deficiency or, less often, a bone-marrow condition."
+ },
+ {
+  "id": "hematocrit",
+  "name": "Haematocrit (PCV)",
+  "aliases": [
+   "hematocrit",
+   "haematocrit",
+   "packed cell volume",
+   "pcv",
+   "hct"
+  ],
+  "unit": "%",
+  "low": 36,
+  "high": 52,
+  "sex": {
+   "male": [
+    41,
+    52
+   ],
+   "female": [
+    36,
+    46
+   ]
+  },
+  "critical_low": 20,
+  "critical_high": 60,
+  "category": "Blood count (CBC)",
+  "conversions": {},
+  "what": "Haematocrit is the share of your blood volume made up of red blood cells.",
+  "low_means": "A low value usually goes with anaemia.",
+  "high_means": "A high value is often due to dehydration."
+ },
+ {
+  "id": "mcv",
+  "name": "MCV",
+  "aliases": [
+   "mean corpuscular volume",
+   "mcv"
+  ],
+  "unit": "fL",
+  "low": 80,
+  "high": 100,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Blood count (CBC)",
+  "conversions": {},
+  "what": "MCV is the average size of your red blood cells.",
+  "low_means": "Small red cells are often linked with iron deficiency.",
+  "high_means": "Large red cells can be linked with low vitamin B12 or folate, alcohol use, or liver problems."
+ },
+ {
+  "id": "mch",
+  "name": "MCH",
+  "aliases": [
+   "mean corpuscular hemoglobin",
+   "mean corpuscular haemoglobin",
+   "mch"
+  ],
+  "unit": "pg",
+  "low": 27,
+  "high": 33,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Blood count (CBC)",
+  "conversions": {},
+  "what": "MCH is the average amount of haemoglobin inside each red blood cell.",
+  "low_means": "A low value is often seen with iron deficiency.",
+  "high_means": "A high value can go with large red cells, for example from low B12 or folate."
+ },
+ {
+  "id": "mchc",
+  "name": "MCHC",
+  "aliases": [
+   "mean corpuscular hemoglobin concentration",
+   "mean corpuscular haemoglobin concentration",
+   "mchc"
+  ],
+  "unit": "g/dL",
+  "low": 32,
+  "high": 36,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Blood count (CBC)",
+  "conversions": {},
+  "what": "MCHC shows how concentrated the haemoglobin is inside red cells.",
+  "low_means": "A low value is often linked with iron deficiency.",
+  "high_means": "A high value is uncommon and can be a lab artefact or a rare red-cell condition."
+ },
+ {
+  "id": "neutrophils",
+  "name": "Neutrophils",
+  "aliases": [
+   "neutrophils",
+   "neutrophil",
+   "polymorphs"
+  ],
+  "unit": "%",
+  "low": 40,
+  "high": 75,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Blood count (CBC)",
+  "conversions": {},
+  "what": "Neutrophils are the most common white cells and are the first to respond to bacterial infections.",
+  "low_means": "A low share can follow viral infections or some medicines.",
+  "high_means": "A high share often points to a bacterial infection or inflammation."
+ },
+ {
+  "id": "lymphocytes",
+  "name": "Lymphocytes",
+  "aliases": [
+   "lymphocytes",
+   "lymphocyte"
+  ],
+  "unit": "%",
+  "low": 20,
+  "high": 45,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Blood count (CBC)",
+  "conversions": {},
+  "what": "Lymphocytes are white cells that help fight viruses and make antibodies.",
+  "low_means": "A low share can be seen with stress, steroids or some infections.",
+  "high_means": "A high share is common during viral infections."
+ },
+ {
+  "id": "esr",
+  "name": "ESR",
+  "aliases": [
+   "erythrocyte sedimentation rate",
+   "esr"
+  ],
+  "unit": "mm/hr",
+  "low": 0,
+  "high": 20,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Inflammation",
+  "conversions": {},
+  "what": "ESR measures how quickly red cells settle in a tube. It is a general, non-specific sign of inflammation.",
+  "low_means": "A low ESR is usually not a concern.",
+  "high_means": "A high ESR suggests inflammation or infection somewhere in the body but does not say where; age and anaemia can also raise it."
+ },
+ {
+  "id": "crp",
+  "name": "C-reactive protein",
+  "aliases": [
+   "c-reactive protein",
+   "c reactive protein",
+   "crp",
+   "hs-crp"
+  ],
+  "unit": "mg/L",
+  "low": 0,
+  "high": 5,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Inflammation",
+  "conversions": {
+   "mg/dl": 10
+  },
+  "what": "CRP is a protein the liver makes when there is inflammation in the body.",
+  "low_means": "A low CRP is normal.",
+  "high_means": "A raised CRP points to inflammation or infection. It does not tell the cause."
+ },
+ {
+  "id": "glucose_fasting",
+  "name": "Fasting blood glucose",
+  "aliases": [
+   "fasting blood sugar",
+   "fasting blood glucose",
+   "fasting plasma glucose",
+   "fasting glucose",
+   "fbs",
+   "fbg",
+   "glucose fasting",
+   "blood sugar fasting",
+   "blood sugar (fasting)",
+   "blood glucose (fasting)",
+   "glucose (fasting)",
+   "plasma glucose (fasting)"
+  ],
+  "unit": "mg/dL",
+  "low": 70,
+  "high": 99,
+  "critical_low": 50,
+  "critical_high": 400,
+  "category": "Diabetes",
+  "conversions": {
+   "mmol/l": 18.0
+  },
+  "what": "This measures the sugar (glucose) in your blood after not eating for at least 8 hours.",
+  "low_means": "Low sugar can cause shakiness, sweating or confusion and needs attention, especially in people on diabetes medicine.",
+  "high_means": "Values from 100 to 125 mg/dL are often called prediabetes; 126 mg/dL or more on repeat tests can indicate diabetes. A doctor confirms this with repeat or other tests."
+ },
+ {
+  "id": "glucose_pp",
+  "name": "Post-meal blood glucose",
+  "aliases": [
+   "post prandial blood sugar",
+   "postprandial blood sugar",
+   "post prandial glucose",
+   "ppbs",
+   "pp blood sugar",
+   "blood sugar pp",
+   "blood sugar (pp)",
+   "blood sugar (post prandial)",
+   "glucose (pp)",
+   "blood glucose (pp)"
+  ],
+  "unit": "mg/dL",
+  "low": 70,
+  "high": 139,
+  "critical_low": 50,
+  "critical_high": 400,
+  "category": "Diabetes",
+  "conversions": {
+   "mmol/l": 18.0
+  },
+  "what": "This measures blood sugar about two hours after a meal.",
+  "low_means": "Low sugar after eating is uncommon and worth discussing with a doctor.",
+  "high_means": "A high value after meals can be an early sign the body is not handling sugar well."
+ },
+ {
+  "id": "glucose_random",
+  "name": "Random blood glucose",
+  "aliases": [
+   "random blood sugar",
+   "random blood glucose",
+   "rbs",
+   "blood sugar (random)",
+   "glucose (random)"
+  ],
+  "unit": "mg/dL",
+  "low": 70,
+  "high": 140,
+  "critical_low": 50,
+  "critical_high": 400,
+  "category": "Diabetes",
+  "conversions": {
+   "mmol/l": 18.0
+  },
+  "what": "This measures blood sugar at any time of day, regardless of meals.",
+  "low_means": "Low sugar can cause shakiness or confusion.",
+  "high_means": "A random value of 200 mg/dL or more with symptoms can suggest diabetes and needs follow-up."
+ },
+ {
+  "id": "hba1c",
+  "name": "HbA1c",
+  "aliases": [
+   "glycated hemoglobin",
+   "glycated haemoglobin",
+   "glycosylated hemoglobin",
+   "hba1c",
+   "a1c"
+  ],
+  "unit": "%",
+  "low": 4.0,
+  "high": 5.6,
+  "critical_low": null,
+  "critical_high": 14,
+  "category": "Diabetes",
+  "conversions": {},
+  "what": "HbA1c reflects your average blood sugar over roughly the last 2–3 months.",
+  "low_means": "A low value is uncommon and usually not a concern on its own.",
+  "high_means": "5.7–6.4% is usually called prediabetes and 6.5% or more can indicate diabetes. It is also used to track how well diabetes is controlled."
+ },
+ {
+  "id": "cholesterol_total",
+  "name": "Total cholesterol",
+  "aliases": [
+   "total cholesterol",
+   "serum cholesterol",
+   "cholesterol total",
+   "cholesterol"
+  ],
+  "unit": "mg/dL",
+  "low": 0,
+  "high": 199,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Lipid profile",
+  "conversions": {
+   "mmol/l": 38.67
+  },
+  "what": "This is the total amount of cholesterol, a fatty substance, in your blood.",
+  "low_means": "Low total cholesterol is usually not a concern.",
+  "high_means": "High cholesterol can build up in blood vessels over time and raise the risk of heart disease and stroke."
+ },
+ {
+  "id": "ldl",
+  "name": "LDL cholesterol",
+  "aliases": [
+   "ldl cholesterol",
+   "ldl-c",
+   "ldl",
+   "low density lipoprotein"
+  ],
+  "unit": "mg/dL",
+  "low": 0,
+  "high": 99,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Lipid profile",
+  "conversions": {
+   "mmol/l": 38.67
+  },
+  "what": "LDL is often called 'bad' cholesterol because extra LDL can stick to the walls of blood vessels.",
+  "low_means": "Low LDL is generally considered good.",
+  "high_means": "High LDL raises the long-term risk of heart attack and stroke. Diet, exercise and sometimes medicine can lower it."
+ },
+ {
+  "id": "hdl",
+  "name": "HDL cholesterol",
+  "aliases": [
+   "hdl cholesterol",
+   "hdl-c",
+   "hdl",
+   "high density lipoprotein"
+  ],
+  "unit": "mg/dL",
+  "low": 40,
+  "high": 100,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Lipid profile",
+  "conversions": {
+   "mmol/l": 38.67
+  },
+  "what": "HDL is often called 'good' cholesterol because it helps carry extra cholesterol away from blood vessels.",
+  "low_means": "Low HDL is linked with a higher risk of heart disease. Exercise and stopping smoking can raise it.",
+  "high_means": "Higher HDL is usually considered protective."
+ },
+ {
+  "id": "triglycerides",
+  "name": "Triglycerides",
+  "aliases": [
+   "triglycerides",
+   "triglyceride",
+   "tg"
+  ],
+  "unit": "mg/dL",
+  "low": 0,
+  "high": 149,
+  "critical_low": null,
+  "critical_high": 1000,
+  "category": "Lipid profile",
+  "conversions": {
+   "mmol/l": 88.57
+  },
+  "what": "Triglycerides are a type of fat in the blood that stores extra energy from food.",
+  "low_means": "Low triglycerides are usually not a concern.",
+  "high_means": "High levels are linked with heart disease risk; very high levels can inflame the pancreas. Sugar, refined carbs and alcohol raise them."
+ },
+ {
+  "id": "vldl",
+  "name": "VLDL cholesterol",
+  "aliases": [
+   "vldl cholesterol",
+   "vldl"
+  ],
+  "unit": "mg/dL",
+  "low": 5,
+  "high": 40,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Lipid profile",
+  "conversions": {},
+  "what": "VLDL is a particle that carries triglycerides in the blood.",
+  "low_means": "Low VLDL is usually not a concern.",
+  "high_means": "High VLDL usually goes with high triglycerides."
+ },
+ {
+  "id": "creatinine",
+  "name": "Serum creatinine",
+  "aliases": [
+   "serum creatinine",
+   "creatinine",
+   "s. creatinine"
+  ],
+  "unit": "mg/dL",
+  "low": 0.6,
+  "high": 1.3,
+  "sex": {
+   "male": [
+    0.7,
+    1.3
+   ],
+   "female": [
+    0.6,
+    1.1
+   ]
+  },
+  "critical_low": null,
+  "critical_high": 5.0,
+  "category": "Kidney function",
+  "conversions": {
+   "µmol/l": 0.01131,
+   "umol/l": 0.01131
+  },
+  "what": "Creatinine is a waste product from muscles that healthy kidneys filter out of the blood.",
+  "low_means": "Low creatinine can be seen in people with low muscle mass and is usually not a concern.",
+  "high_means": "A high level can mean the kidneys are not filtering as well as they should. Dehydration and some medicines can also raise it."
+ },
+ {
+  "id": "urea",
+  "name": "Blood urea",
+  "aliases": [
+   "blood urea",
+   "serum urea",
+   "urea"
+  ],
+  "unit": "mg/dL",
+  "low": 15,
+  "high": 45,
+  "critical_low": null,
+  "critical_high": 150,
+  "category": "Kidney function",
+  "conversions": {
+   "mmol/l": 6.006
+  },
+  "what": "Urea is a waste product formed when the body breaks down protein; the kidneys remove it.",
+  "low_means": "Low urea can occur with low protein intake or liver problems.",
+  "high_means": "High urea can come from dehydration, a high-protein diet or reduced kidney function."
+ },
+ {
+  "id": "bun",
+  "name": "Blood urea nitrogen",
+  "aliases": [
+   "blood urea nitrogen",
+   "bun"
+  ],
+  "unit": "mg/dL",
+  "low": 7,
+  "high": 20,
+  "critical_low": null,
+  "critical_high": 100,
+  "category": "Kidney function",
+  "conversions": {},
+  "what": "BUN measures the nitrogen part of urea in the blood, another marker of kidney function.",
+  "low_means": "Low BUN is usually not a concern.",
+  "high_means": "High BUN can come from dehydration or reduced kidney function."
+ },
+ {
+  "id": "egfr",
+  "name": "eGFR",
+  "aliases": [
+   "estimated gfr",
+   "egfr",
+   "estimated glomerular filtration rate"
+  ],
+  "unit": "mL/min/1.73m²",
+  "low": 90,
+  "high": 200,
+  "critical_low": 15,
+  "critical_high": null,
+  "category": "Kidney function",
+  "conversions": {},
+  "what": "eGFR estimates how well your kidneys filter blood each minute.",
+  "low_means": "A value below 60 for three months or more can indicate chronic kidney disease; below 15 is kidney failure range.",
+  "high_means": "A high eGFR is usually not a concern."
+ },
+ {
+  "id": "uric_acid",
+  "name": "Uric acid",
+  "aliases": [
+   "serum uric acid",
+   "uric acid"
+  ],
+  "unit": "mg/dL",
+  "low": 3.5,
+  "high": 7.2,
+  "sex": {
+   "male": [
+    3.5,
+    7.2
+   ],
+   "female": [
+    2.6,
+    6.0
+   ]
+  },
+  "critical_low": null,
+  "critical_high": 13,
+  "category": "Kidney function",
+  "conversions": {
+   "µmol/l": 0.0168,
+   "umol/l": 0.0168
+  },
+  "what": "Uric acid is a waste product from breaking down purines, found in some foods and in body cells.",
+  "low_means": "Low uric acid is uncommon and usually not a concern.",
+  "high_means": "High uric acid can cause gout (painful joints) or kidney stones."
+ },
+ {
+  "id": "sodium",
+  "name": "Sodium",
+  "aliases": [
+   "serum sodium",
+   "sodium",
+   "na+"
+  ],
+  "unit": "mmol/L",
+  "low": 135,
+  "high": 145,
+  "critical_low": 120,
+  "critical_high": 160,
+  "category": "Electrolytes",
+  "conversions": {
+   "meq/l": 1.0
+  },
+  "what": "Sodium is a salt that helps control water balance, nerves and muscles.",
+  "low_means": "Low sodium can cause headache, confusion or tiredness and has many causes, including some medicines and drinking a lot of water.",
+  "high_means": "High sodium usually means the body is short of water (dehydration)."
+ },
+ {
+  "id": "potassium",
+  "name": "Potassium",
+  "aliases": [
+   "serum potassium",
+   "potassium",
+   "k+"
+  ],
+  "unit": "mmol/L",
+  "low": 3.5,
+  "high": 5.1,
+  "critical_low": 2.5,
+  "critical_high": 6.5,
+  "category": "Electrolytes",
+  "conversions": {
+   "meq/l": 1.0
+  },
+  "what": "Potassium is a mineral that keeps the heart and muscles working properly.",
+  "low_means": "Low potassium can cause weakness, cramps or an irregular heartbeat; vomiting, diarrhoea and some water pills can cause it.",
+  "high_means": "High potassium can affect heart rhythm and can be linked with kidney problems or some medicines."
+ },
+ {
+  "id": "chloride",
+  "name": "Chloride",
+  "aliases": [
+   "serum chloride",
+   "chloride",
+   "cl-"
+  ],
+  "unit": "mmol/L",
+  "low": 98,
+  "high": 107,
+  "critical_low": 80,
+  "critical_high": 120,
+  "category": "Electrolytes",
+  "conversions": {
+   "meq/l": 1.0
+  },
+  "what": "Chloride works with sodium to keep body fluids balanced.",
+  "low_means": "Low chloride can happen with vomiting or some medicines.",
+  "high_means": "High chloride can happen with dehydration."
+ },
+ {
+  "id": "calcium",
+  "name": "Calcium",
+  "aliases": [
+   "serum calcium",
+   "total calcium",
+   "calcium"
+  ],
+  "unit": "mg/dL",
+  "low": 8.6,
+  "high": 10.3,
+  "critical_low": 6.5,
+  "critical_high": 13,
+  "category": "Electrolytes",
+  "conversions": {
+   "mmol/l": 4.008
+  },
+  "what": "Calcium keeps bones and teeth strong and helps nerves, muscles and the heart work.",
+  "low_means": "Low calcium can come from low vitamin D or low protein (albumin) and may cause tingling or cramps.",
+  "high_means": "High calcium can come from overactive parathyroid glands or other conditions and should be checked."
+ },
+ {
+  "id": "tsh",
+  "name": "TSH",
+  "aliases": [
+   "thyroid stimulating hormone",
+   "tsh",
+   "s. tsh",
+   "ultrasensitive tsh"
+  ],
+  "unit": "µIU/mL",
+  "low": 0.4,
+  "high": 4.5,
+  "critical_low": 0.01,
+  "critical_high": 50,
+  "category": "Thyroid",
+  "conversions": {
+   "miu/l": 1.0,
+   "uiu/ml": 1.0
+  },
+  "what": "TSH is a hormone from the brain's pituitary gland that tells the thyroid how much hormone to make.",
+  "low_means": "A low TSH often means the thyroid is overactive (hyperthyroidism).",
+  "high_means": "A high TSH often means the thyroid is underactive (hypothyroidism), which can cause tiredness, weight gain and feeling cold."
+ },
+ {
+  "id": "t3",
+  "name": "Total T3",
+  "aliases": [
+   "total t3",
+   "triiodothyronine",
+   "t3"
+  ],
+  "unit": "ng/dL",
+  "low": 80,
+  "high": 200,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Thyroid",
+  "conversions": {},
+  "what": "T3 is one of the active thyroid hormones that controls how fast the body uses energy.",
+  "low_means": "Low T3 can go with an underactive thyroid or serious illness.",
+  "high_means": "High T3 can go with an overactive thyroid."
+ },
+ {
+  "id": "t4",
+  "name": "Total T4",
+  "aliases": [
+   "total t4",
+   "thyroxine",
+   "t4"
+  ],
+  "unit": "µg/dL",
+  "low": 5.0,
+  "high": 12.0,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Thyroid",
+  "conversions": {
+   "ug/dl": 1.0
+  },
+  "what": "T4 is the main hormone made by the thyroid gland.",
+  "low_means": "Low T4 can mean an underactive thyroid.",
+  "high_means": "High T4 can mean an overactive thyroid."
+ },
+ {
+  "id": "alt",
+  "name": "ALT (SGPT)",
+  "aliases": [
+   "alanine aminotransferase",
+   "sgpt",
+   "alt"
+  ],
+  "unit": "U/L",
+  "low": 7,
+  "high": 56,
+  "critical_low": null,
+  "critical_high": 1000,
+  "category": "Liver function",
+  "conversions": {
+   "iu/l": 1.0
+  },
+  "what": "ALT is an enzyme found mainly in the liver.",
+  "low_means": "A low ALT is normal.",
+  "high_means": "A raised ALT can mean the liver is irritated or injured, for example from fatty liver, alcohol, hepatitis or some medicines."
+ },
+ {
+  "id": "ast",
+  "name": "AST (SGOT)",
+  "aliases": [
+   "aspartate aminotransferase",
+   "sgot",
+   "ast"
+  ],
+  "unit": "U/L",
+  "low": 10,
+  "high": 40,
+  "critical_low": null,
+  "critical_high": 1000,
+  "category": "Liver function",
+  "conversions": {
+   "iu/l": 1.0
+  },
+  "what": "AST is an enzyme found in the liver, heart and muscles.",
+  "low_means": "A low AST is normal.",
+  "high_means": "A raised AST can come from liver injury, heavy exercise or muscle damage."
+ },
+ {
+  "id": "alp",
+  "name": "Alkaline phosphatase",
+  "aliases": [
+   "alkaline phosphatase",
+   "alp"
+  ],
+  "unit": "U/L",
+  "low": 44,
+  "high": 147,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Liver function",
+  "conversions": {
+   "iu/l": 1.0
+  },
+  "what": "ALP is an enzyme found in the liver and bones.",
+  "low_means": "Low ALP is uncommon and usually not a concern.",
+  "high_means": "High ALP can come from blocked bile flow, liver disease or bone growth and bone conditions."
+ },
+ {
+  "id": "bilirubin_total",
+  "name": "Total bilirubin",
+  "aliases": [
+   "total bilirubin",
+   "bilirubin total",
+   "s. bilirubin",
+   "bilirubin"
+  ],
+  "unit": "mg/dL",
+  "low": 0.1,
+  "high": 1.2,
+  "critical_low": null,
+  "critical_high": 15,
+  "category": "Liver function",
+  "conversions": {
+   "µmol/l": 0.0585,
+   "umol/l": 0.0585
+  },
+  "what": "Bilirubin is a yellow substance made when old red blood cells break down; the liver clears it.",
+  "low_means": "Low bilirubin is usually not a concern.",
+  "high_means": "High bilirubin can cause yellow skin or eyes (jaundice) and can come from liver problems, blocked bile ducts or fast red-cell breakdown."
+ },
+ {
+  "id": "albumin",
+  "name": "Albumin",
+  "aliases": [
+   "serum albumin",
+   "albumin"
+  ],
+  "unit": "g/dL",
+  "low": 3.5,
+  "high": 5.0,
+  "critical_low": 1.5,
+  "critical_high": null,
+  "category": "Liver function",
+  "conversions": {
+   "g/l": 0.1
+  },
+  "what": "Albumin is the main protein made by the liver; it keeps fluid inside blood vessels.",
+  "low_means": "Low albumin can come from liver or kidney disease, poor nutrition or long illness and can cause swelling.",
+  "high_means": "High albumin usually means dehydration."
+ },
+ {
+  "id": "total_protein",
+  "name": "Total protein",
+  "aliases": [
+   "total protein",
+   "serum protein"
+  ],
+  "unit": "g/dL",
+  "low": 6.0,
+  "high": 8.3,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Liver function",
+  "conversions": {
+   "g/l": 0.1
+  },
+  "what": "Total protein measures albumin and globulin proteins together.",
+  "low_means": "Low protein can come from poor nutrition, liver or kidney disease.",
+  "high_means": "High protein can come from dehydration or long-term inflammation."
+ },
+ {
+  "id": "vitamin_d",
+  "name": "Vitamin D (25-OH)",
+  "aliases": [
+   "25-hydroxy vitamin d",
+   "25 oh vitamin d",
+   "vitamin d3",
+   "vitamin d",
+   "vit d"
+  ],
+  "unit": "ng/mL",
+  "low": 30,
+  "high": 100,
+  "critical_low": 10,
+  "critical_high": 150,
+  "category": "Vitamins & minerals",
+  "conversions": {
+   "nmol/l": 0.4
+  },
+  "what": "Vitamin D helps the body absorb calcium and keeps bones and muscles healthy.",
+  "low_means": "Low vitamin D is very common, especially with little sun exposure, and can cause bone pain or weakness over time. 20–29 ng/mL is often called insufficient and below 20 deficient.",
+  "high_means": "Very high levels usually come from taking too many supplements."
+ },
+ {
+  "id": "vitamin_b12",
+  "name": "Vitamin B12",
+  "aliases": [
+   "vitamin b12",
+   "vit b12",
+   "cobalamin",
+   "b12"
+  ],
+  "unit": "pg/mL",
+  "low": 200,
+  "high": 900,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Vitamins & minerals",
+  "conversions": {
+   "pmol/l": 1.355
+  },
+  "what": "Vitamin B12 is needed to make red blood cells and keep nerves healthy.",
+  "low_means": "Low B12 is common in vegetarians and older adults and can cause anaemia, tiredness, tingling or memory problems.",
+  "high_means": "High B12 is usually from supplements and rarely a concern on its own."
+ },
+ {
+  "id": "iron",
+  "name": "Serum iron",
+  "aliases": [
+   "serum iron",
+   "iron"
+  ],
+  "unit": "µg/dL",
+  "low": 60,
+  "high": 170,
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Vitamins & minerals",
+  "conversions": {
+   "ug/dl": 1.0,
+   "µmol/l": 5.585,
+   "umol/l": 5.585
+  },
+  "what": "This measures the iron in your blood. Iron is needed to make haemoglobin.",
+  "low_means": "Low iron is a common cause of anaemia.",
+  "high_means": "High iron can come from supplements or conditions where the body stores too much iron."
+ },
+ {
+  "id": "ferritin",
+  "name": "Ferritin",
+  "aliases": [
+   "serum ferritin",
+   "ferritin"
+  ],
+  "unit": "ng/mL",
+  "low": 15,
+  "high": 300,
+  "sex": {
+   "male": [
+    24,
+    336
+   ],
+   "female": [
+    15,
+    150
+   ]
+  },
+  "critical_low": null,
+  "critical_high": null,
+  "category": "Vitamins & minerals",
+  "conversions": {
+   "µg/l": 1.0,
+   "ug/l": 1.0
+  },
+  "what": "Ferritin is the protein that stores iron; it shows how much iron the body has in reserve.",
+  "low_means": "Low ferritin is the most specific sign of low iron stores.",
+  "high_means": "High ferritin can come from inflammation, liver disease or iron overload."
+ }
+]

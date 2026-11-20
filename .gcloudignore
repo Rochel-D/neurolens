@@ -1,0 +1,19 @@
+# Files NOT uploaded to Cloud Build. Unlike .gitignore, models/mri_classifier.pt IS uploaded.
+.gcloudignore
+.env
+.env.*
+!.env.example
+.venv/
+*.db
+__pycache__/
+.pytest_cache/
+.git/
+docs/
+evals/
+tests/
+training/
+mri_out/
+work/
+models/*/
+deploy/
+*.zip

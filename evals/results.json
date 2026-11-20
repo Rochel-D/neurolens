@@ -1,0 +1,67 @@
+{
+  "domain_lab_parser": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "value_accuracy": 1.0,
+    "status_accuracy": 1.0,
+    "per_report": {
+      "cbc_report.txt": {
+        "found": 14,
+        "expected": 14,
+        "extra": [],
+        "missed": []
+      },
+      "metabolic_report.txt": {
+        "found": 15,
+        "expected": 15,
+        "extra": [],
+        "missed": []
+      },
+      "thyroid_electrolytes_report.txt": {
+        "found": 9,
+        "expected": 9,
+        "extra": [],
+        "missed": []
+      },
+      "messy_report.txt": {
+        "found": 5,
+        "expected": 5,
+        "extra": [],
+        "missed": []
+      }
+    }
+  },
+  "grounding_verifier": {
+    "tampered_detected": "10/10",
+    "detection_rate": 1.0,
+    "false_alarm_rate": 0.0,
+    "mri_checks_correct": "4/4"
+  },
+  "safety_guardrails": {
+    "input_accuracy": 1.0,
+    "input_cases": 18,
+    "errors": [],
+    "output_rules_correct": "4/4"
+  },
+  "retrieval_rag": {
+    "hit@1": 1.0,
+    "hit@3": 1.0,
+    "queries": 14
+  },
+  "reliability_key_pool": {
+    "key_failure_probability": 0.35,
+    "success_1_key": 0.65,
+    "success_6_keys": 0.998
+  },
+  "latency": {
+    "parse_retrieve_p50_ms": 25.83,
+    "parse_retrieve_p95_ms": 31.24
+  },
+  "agent_offline": {
+    "runs": 9,
+    "offline_agent_p50_ms": 36,
+    "offline_agent_p95_ms": 44,
+    "verified_rate": 1.0,
+    "patient_answer_flesch": 67.8
+  }
+}
