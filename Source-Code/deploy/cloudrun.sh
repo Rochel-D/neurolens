@@ -60,7 +60,8 @@ ADMIN_PW="$(get ADMIN_PASSWORD)"
 NEW_ADMIN=0
 if [ -z "$ADMIN_PW" ] || [ "$ADMIN_PW" = "Admin12345" ]; then
   ADMIN_PW="$(gcloud secrets versions access latest --secret="$SECRET" 2>/dev/null | grep -E '^ADMIN_PASSWORD=' | cut -d= -f2- || true)"
-  if [ -z "$ADMIN_PW" ]; then ADMIN_PW="NL-$(openssl rand -hex 6)"; NEW_ADMIN=1; fi
+  if [ -z "$ADMIN_PW" ]; then ADMIN_PW="NL-$(openssl rand -hex 6)"; fi
+  NEW_ADMIN=1   # generated now or on an earlier run: always show it, .env does not contain it
 fi
 
 {
@@ -84,9 +85,13 @@ else
 fi
 gcloud secrets add-iam-policy-binding "$SECRET" --member="serviceAccount:$RUNTIME_SA" \
   --role="roles/secretmanager.secretAccessor" --quiet >/dev/null
-# newer projects build with the compute service account, which needs this role
-gcloud projects add-iam-policy-binding "$PROJECT" --member="serviceAccount:$RUNTIME_SA" \
-  --role="roles/run.builder" --condition=None --quiet >/dev/null 2>&1 || true
+# Newer projects build with the compute service account, which has no roles by default.
+echo "→ Giving the build service account the roles it needs…"
+for ROLE in roles/run.builder roles/serviceusage.serviceUsageConsumer roles/storage.objectViewer \
+            roles/artifactregistry.writer roles/logging.logWriter; do
+  gcloud projects add-iam-policy-binding "$PROJECT" --member="serviceAccount:$RUNTIME_SA" \
+    --role="$ROLE" --condition=None --quiet >/dev/null || { echo "Could not add $ROLE (are you Owner of $PROJECT?)"; exit 1; }
+done
 
 # ---------------------------------------------------------------- build + deploy
 echo "→ Building and deploying (about 6–10 minutes the first time)…"
@@ -116,7 +121,7 @@ echo "✅ NeuroLens is live: $URL"
 echo "   Health check:   $URL/api/health"
 echo "   Admin login:    $(get ADMIN_EMAIL | sed 's/^$/admin@neurolens.local/')"
 if [ "$NEW_ADMIN" = 1 ]; then
-  echo "   Admin password: $ADMIN_PW   ← new, write it down (also stored in Secret Manager → $SECRET)"
+  echo "   Admin password: $ADMIN_PW   ← write it down (also stored in Secret Manager → $SECRET)"
 else
   echo "   Admin password: (the one in your .env / already in Secret Manager)"
 fi

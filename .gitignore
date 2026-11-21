@@ -1,10 +1,15 @@
+# Secrets and local environments
 .env
+**/.env
 .venv/
+**/.venv/
+# Local data and caches
 *.db
 __pycache__/
 .pytest_cache/
-models/*.pt
-models/*/
-mri_out/
-work/
 .DS_Store
+# Large model files (share separately)
+Source-Code/models/*.pt
+Source-Code/models/*/
+Source-Code/mri_out/
+Source-Code/work/
